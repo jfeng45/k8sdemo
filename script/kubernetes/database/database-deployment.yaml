@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8sdemo-database-deployment
+  labels:
+    app: k8sdemo-database
+spec:
+  selector:
+    matchLabels:
+      app: k8sdemo-database
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: k8sdemo-database
+    spec:
+      containers:
+        - image: mysql:5.7
+          name: k8sdemo-database-container
+          imagePullPolicy: Never
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: k8sdemo-secret
+                  key: MYSQL_ROOT_PASSWORD
+            - name: MYSQL_USER_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: k8sdemo-secret
+                  key: MYSQL_USER_NAME
+            - name: MYSQL_USER_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: k8sdemo-secret
+                  key: MYSQL_USER_PASSWORD
+            - name: MYSQL_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: k8sdemo-config
+                  key: MYSQL_DATABASE
+          args: ["--default-authentication-plugin=mysql_native_password"]
+          ports:
+            - containerPort: 3306
+              name: portname
+          volumeMounts:
+            - name: k8sdemo-database-persistentstorage
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: k8sdemo-database-persistentstorage
+          persistentVolumeClaim:
+            claimName: k8sdemo-database-pvclaim

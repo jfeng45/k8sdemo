@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8sdemo-config  # name of ConfigMap, referenced in other files
+  labels:
+    app: k8sdemo
+data:
+  MYSQL_HOST: k8sdemo-database-service   # host address of mysql server, we are using DNS of Service
+  MYSQL_PORT: "3306"
+  MYSQL_DATABASE: service_config # name of the database

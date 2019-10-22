@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: k8sdemo-backend-pv
+  labels:
+    app: k8sdemo-backend
+spec:
+  capacity:
+    storage: 1Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: standard
+  local:
+    path: /home/vagrant/app/k8sdemo/logs
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - minikube
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: k8sdemo-backend-pvclaim
+  labels:
+    app: k8sdemo-backend
+spec:
+  accessModes:
+    - ReadWriteOnce
+  # storageClassName: local-storage
+  resources:
+    requests:
+      storage: 1Gi #1 GB

@@ -1,0 +1,7 @@
+1.5712998420432248e+09	debug	config/zap.go:97	logger construction succeeded
+	1.5712998420442016e+09	info	config/zap.go:48	
+	1.5712998420471334e+09	debug	config/appConfig.go:47	connect to database 
+	1.5712998420481145e+09	debug	config/appConfig.go:50	dataSourceName::@tcp(:)/?charset=utf8
+	1.5712998420490842e+09	debug	userdata/userDataService.go:81	FindAll()
+	1.5712998420520127e+09	debug	cmd/main.go:32	user registere failed:dial tcp :0: connectex: The requested address is not valid in its context.
+	

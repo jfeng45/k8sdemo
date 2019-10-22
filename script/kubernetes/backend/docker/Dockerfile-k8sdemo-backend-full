@@ -1,0 +1,24 @@
+# vagrant@ubuntu-xenial:~/app/k8sdemo$
+# cd dockerimages/kubernetes/k8sdemo/
+# docker build -f ./script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full -t k8sdemo-backend-full .
+# docker run -td --name k8sdemo-backend-full k8sdemo-backend-full
+# docker exec -it a95c /bin/bash
+
+FROM golang:latest
+
+# Set the Current Working Directory inside the container
+WORKDIR /app
+
+COPY go.mod go.sum ./
+
+RUN go mod download
+
+COPY . .
+
+WORKDIR /app/cmd
+
+# Build the Go app
+RUN GOOS=linux go build -o main.exe
+
+CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
+
