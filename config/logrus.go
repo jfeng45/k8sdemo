@@ -2,9 +2,12 @@
 package config
 
 import (
+	"fmt"
 	"github.com/jfeng45/k8sdemo/tool"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
+	"io"
+	"os"
 )
 
 //type loggerWrapper struct {
@@ -41,15 +44,21 @@ func RegisterLogrusLog() error {
 	log := logrus.New()
 	log.SetFormatter(&logrus.TextFormatter{})
 	log.SetReportCaller(true)
+	file, err := os.OpenFile("../logs/demo.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil {
+		fmt.Println("Could Not Open Log File : ", err)
+		return errors.Wrap(err, "")
+	}
+	mw := io.MultiWriter(os.Stdout,file)
+	log.SetOutput(mw)
 	//log.SetOutput(os.Stdout)
 	//customize it from configuration file
-	err := customizeLogrusFromConfig(log)
+	err = customizeLogrusFromConfig(log)
 	if err != nil {
 		return errors.Wrap(err, "")
 	}
 	//This is for loggerWrapper implementation
 	//logger.Logger(&loggerWrapper{log})
-
 	tool.SetLogger(log)
 	return nil
 }
