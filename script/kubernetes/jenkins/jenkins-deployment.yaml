@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8sdemo-jenkins-deployment
+  labels:
+    app: k8sdemo-jenkins
+spec:
+  selector:
+    matchLabels:
+      app: k8sdemo-jenkins
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: k8sdemo-jenkins
+    spec:
+      serviceAccountName: default # 服务账户的名字是default
+      containers:
+        - image: jenkinsci/jenkins:2.154-slim
+          name: k8sdemo-jenkins-container
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+            - containerPort: 50000
+          volumeMounts:
+            - name: k8sdemo-jenkins-persistentstorage
+              mountPath: /var/jenkins_home
+      volumes:
+        - name: k8sdemo-jenkins-persistentstorage
+          persistentVolumeClaim:
+            claimName: k8sdemo-jenkins-pvclaim
+
+

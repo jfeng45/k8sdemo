@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc7183a3-d645-41c3-b2fe-e6ede342afc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.zh.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/logrus.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/logrus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/zap.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/demo.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/demo.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/kubernetes/backend/backend-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/script/kubernetes/backend/backend-service.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,76 +18,89 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-deployment.yaml">
+        <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-dec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="14" />
-              <folding>
-                <element signature="e#964#1121#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/windowsEnv.bat">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-service.yaml">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/jenkins-docker.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state>
+              <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/logrus.go">
+        <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-codedemo">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+            <state relative-caret-position="34">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.zh.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/zap.go">
+        <entry file="file://$PROJECT_DIR$/script/cd/jenkins-salve-test">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="63" column="49" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="49" />
+            <state relative-caret-position="170">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-deployment.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-354">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding>
-                <element signature="e#59#165#0" expanded="true" />
+                <element signature="e#449#605#0" expanded="true" />
+                <element signature="e#618#782#0" expanded="true" />
+                <element signature="e#795#941#0" expanded="true" />
+                <element signature="e#954#1103#0" expanded="true" />
+                <element signature="e#1116#1273#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/appConfig.go">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="e#17#266#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/k8sdemo-config.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -94,26 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-service.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="32" />
+            <state relative-caret-position="238">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -139,9 +135,11 @@
       <find>k8sdemo.database.config</find>
       <find>k8sdemo.database.secret</find>
       <find>k8sdemo.database</find>
-      <find>k8sdemo-database</find>
       <find>MYSQL_HOST</find>
       <find>net</find>
+      <find>database</find>
+      <find>k8sdemo-jenkins</find>
+      <find>k8sdemo-database</find>
     </findStrings>
     <replaceStrings>
       <replace>github.com/jfeng45/k8sdemo</replace>
@@ -154,6 +152,8 @@
       <replace>k8sdemo.secret</replace>
       <replace>k8sdemo.backend</replace>
       <replace>k8sdemo-backend</replace>
+      <replace>jenkins</replace>
+      <replace>k8sdemo-jenkins</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes\database</dir>
@@ -168,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/go.mod" />
         <option value="$PROJECT_DIR$/tool/logger.go" />
         <option value="$PROJECT_DIR$/script/kubernetes/database/mysql-volume.yaml" />
         <option value="$PROJECT_DIR$/script/kubernetes/database/mysql-service.yaml" />
@@ -187,7 +186,6 @@
         <option value="$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile" />
         <option value="$PROJECT_DIR$/Dockerfile-k8sdemo-backend" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full.go" />
-        <option value="$PROJECT_DIR$/script/kubernetes/backend/backend-service.yaml" />
         <option value="$PROJECT_DIR$/script/kubernetes/k8sdemo.sh" />
         <option value="$PROJECT_DIR$/script/kubernetes/k8sdemo-config.yaml" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/backend-volume.yaml" />
@@ -195,21 +193,37 @@
         <option value="$PROJECT_DIR$/config/appConfig.go" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/docker/docker-backend.sh" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend" />
-        <option value="$PROJECT_DIR$/script/kubernetes/backend/backend.sh" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/backend-deployment.yaml" />
         <option value="$PROJECT_DIR$/config/logrus.go" />
         <option value="$PROJECT_DIR$/README.zh.md" />
         <option value="$PROJECT_DIR$/script/kubernetes/database/database-service.yaml" />
+        <option value="$PROJECT_DIR$/script/ci/k8sdemoci.bat" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-volume.yaml" />
+        <option value="$PROJECT_DIR$/script/kubernetes/backend/backend-service.yaml" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/service-account.yaml" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/jenkins.sh" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-service.yaml" />
+        <option value="$PROJECT_DIR$/go.sum" />
+        <option value="$PROJECT_DIR$/go.mod" />
+        <option value="$PROJECT_DIR$/script/ci/script" />
+        <option value="$PROJECT_DIR$/script/ci/jenkinsfile" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/docker/jenkins-docker.sh" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/docker/Docker-jenkins-docker" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker" />
+        <option value="$PROJECT_DIR$/script/ci/jenkinsfile-test" />
+        <option value="$PROJECT_DIR$/script/cd/jenkins-salve-test" />
+        <option value="$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-deployment.yaml" />
+        <option value="$PROJECT_DIR$/script/kubernetes/backend/backend.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="45" />
-    <option name="y" value="6" />
-    <option name="width" value="1312" />
-    <option name="height" value="723" />
+    <option name="x" value="28" />
+    <option name="y" value="1" />
+    <option name="width" value="1304" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,6 +242,11 @@
             <path>
               <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,6 +258,12 @@
               <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
               <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="cd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
               <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,14 +271,7 @@
               <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
               <item name="script" type="462c0819:PsiDirectoryNode" />
               <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
@@ -276,22 +294,22 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/script/kubernetes/jenkins" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes" />
-      <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes\backend\docker" />
-      <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes\database" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes\jenkins" />
       <recent name="C:\code\src\github.com\jfeng45\k8sdemo" />
       <recent name="C:\code\src\github.com\jfeng45\k8sdemo\config" />
       <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes\backend" />
       <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes" />
+      <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes\backend\docker" />
       <recent name="C:\code\src\github.com\jfeng45\k8sdemo\script\kubernetes\database" />
     </key>
   </component>
@@ -308,10 +326,9 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="9" width="1312" height="723" extended-state="0" />
-    <editor active="true" />
+    <frame x="28" y="1" width="1304" height="726" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2827476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34967846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -340,23 +357,6 @@
     <proxy>direct</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/gopath/src/databaseApp/config/appConfig.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="e#17#336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/user.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/mysql/mysql-config.yaml" />
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/mysql/mysql-deployment.yaml" />
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/mysql/mysql-secret.yaml" />
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/mysql/mysql-service.yaml" />
     <entry file="file://$PROJECT_DIR$/script/kubernetes/mysql/mysql-volume.yaml" />
     <entry file="file://$PROJECT_DIR$/script/kubernetes/database/mysql-volume.yaml" />
     <entry file="file://$PROJECT_DIR$/script/kubernetes/database/mysql-service.yaml" />
@@ -422,38 +422,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-volume.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/kubernetes/k8sdemo-secret.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/k8sdemo-config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/logger.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-volume.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -470,41 +442,6 @@
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/docker-backend.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/k8sdemo.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-deployment.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding>
-            <element signature="e#449#605#0" expanded="true" />
-            <element signature="e#618#782#0" expanded="true" />
-            <element signature="e#795#941#0" expanded="true" />
-            <element signature="e#954#1103#0" expanded="true" />
-            <element signature="e#1116#1273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -512,75 +449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-deployment.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#964#1121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/windowsEnv.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/zap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="63" column="49" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="49" />
-          <folding>
-            <element signature="e#59#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/appConfig.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#17#266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-service.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/logrus.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -594,10 +466,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-service.yaml">
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-volume.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-volume.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#964#1121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/database/database-service.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/zap.go" />
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/appConfig.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#17#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/k8sdemo.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/windowsEnv.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/docker-backend.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/k8sdemoci.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/service-account.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-service.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-volume.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/k8sdemo-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-service.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend-deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-354">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <element signature="e#449#605#0" expanded="true" />
+            <element signature="e#618#782#0" expanded="true" />
+            <element signature="e#795#941#0" expanded="true" />
+            <element signature="e#954#1103#0" expanded="true" />
+            <element signature="e#1116#1273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/backend.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-salve-test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-codedemo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-dec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/jenkins-docker.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>

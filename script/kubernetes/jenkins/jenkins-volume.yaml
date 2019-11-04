@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: k8sdemo-jenkins-pv
+  labels:
+    app: k8sdemo-jenkins
+spec:
+  capacity:
+    storage: 1Gi
+  # volumeMode field requires BlockVolume Alpha feature gate to be enabled.
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: standard
+  local:
+    path: /home/vagrant/app/jenkins
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - minikube
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: k8sdemo-jenkins-pvclaim
+  labels:
+    app: k8sdemo-jenkins
+spec:
+  accessModes:
+    - ReadWriteOnce
+  # storageClassName: local-storage
+  resources:
+    requests:
+      storage: 1Gi #1 GB

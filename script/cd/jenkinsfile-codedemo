@@ -1,0 +1,52 @@
+pipeline {
+    environment {
+    registry = "jfeng45/codedemo"
+    registryCredential = 'dockerhub'
+  }
+    // Lets Jenkins use Docker for us later.
+    agent any
+    // If anything fails, the whole Pipeline stops.
+
+    stages {
+       stage('Initialize'){
+                def dockerHome = tool 'myDocker'
+                env.PATH = "${dockerHome}/bin:${env.PATH}"
+            }
+       stage('Docker') {
+           steps {
+
+                // Use a scripted pipeline.
+                script {
+                    node {
+                        def app
+
+                        stage('Clone repository') {
+                           git 'https://github.com/jfeng45/k8sdemo'
+                        }
+
+                        stage('Build image') {
+                            app = docker.build(registry+":$BUILD_NUMBER")
+                        }
+
+                        stage('Push image') {
+                            // Use the Credential ID of the Docker Hub Credentials we added to Jenkins.
+                            docker.withRegistry( '', registryCredential ) {
+                                // Push image and tag it with our build number for versioning purposes.
+                                app.push()
+
+                            }
+                        }
+                    }
+                }
+            }
+         }
+       }
+    post {
+        always {
+            // Clean up our workspace.
+            deleteDir()
+            }
+    }
+
+
+}

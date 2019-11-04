@@ -1,0 +1,25 @@
+def POD_LABEL = "testpod-${UUID.randomUUID().toString()}"
+podTemplate(label: POD_LABEL, cloud: 'kubernetes', containers: [
+    containerTemplate(name: 'build', image: 'jfeng45/k8sdemo-backend:1.0', ttyEnabled: true, command: 'cat'),
+    containerTemplate(name: 'run', image: 'jfeng45/k8sdemo-backend:1.0', ttyEnabled: true, command: 'cat')
+  ]) {
+
+    node(POD_LABEL) {
+        stage('build a go project') {
+            container('build') {
+                stage('Build a go project') {
+                    sh 'echo hello'
+                }
+            }
+        }
+
+        stage('Run a Golang project') {
+            container('run') {
+                stage('Run a Go project') {
+                    sh '/root/main.exe'
+                }
+            }
+        }
+
+    }
+}
