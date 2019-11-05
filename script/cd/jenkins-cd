@@ -1,0 +1,22 @@
+def POD_LABEL = "testpod-${UUID.randomUUID().toString()}"
+podTemplate(label: POD_LABEL, cloud: 'kubernetes', containers: [
+    containerTemplate(name: 'build', image: 'lachlanevenson/k8s-kubectl:latest', ttyEnabled: true, command: 'cat')
+
+  ],
+  volumes: [
+  hostPathVolume(mountPath: '/home/vagrant/jfeng45/k8sdemo', hostPath: '/home/vagrant/jfeng45/k8sdemo')
+  ]) {
+
+    node(POD_LABEL) {
+        stage('build a go project') {
+            container('build') {
+                stage('Build a go project') {
+                    sh 'kubectl apply -f /home/vagrant/jfeng45/k8sdemo/script/kubernetes/backend/backend-deployment.yaml'
+                    sh 'kubectl apply -f /home/vagrant/jfeng45/k8sdemo/script/kubernetes/backend/backend-service.yaml'
+                }
+            }
+        }
+
+
+    }
+}

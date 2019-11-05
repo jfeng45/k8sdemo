@@ -1,0 +1,18 @@
+pipeline {
+    // Lets Jenkins use Docker for us later.
+    agent kubernetes
+
+    // If anything fails, the whole Pipeline stops.
+    stages {
+        stage('Build & Test') {
+            // Use golang.
+            agent { kub { image 'lachlanevenson/k8s-kubectl:latest' } }
+
+            steps {
+                // Create our project directory.
+                 sh 'kubectl apply -f backend-deployment.yaml'
+                 sh 'kubectl apply -f backend-service.yaml'
+            }
+        }
+    }
+}
