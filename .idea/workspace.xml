@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc7183a3-d645-41c3-b2fe-e6ede342afc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/script/cd/jenkins-k8sdemo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/kubernetes/jenkins/docker/jenkins-docker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/kubernetes/jenkins/docker/jenkins-docker.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/kubernetes/jenkins/service-account.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/script/kubernetes/jenkins/service-account.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/cd/jenkin-kub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/cd/jenkins-cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/cd/jenkins-cd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/cd/jenkins-salve-test" beforeDir="false" afterPath="$PROJECT_DIR$/script/cd/jenkins-slave-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/cd/jenkinsfile-codedemo" beforeDir="false" afterPath="$PROJECT_DIR$/script/cd/jenkinsfile-declarative" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/cd/jenkinsfile-dec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/cd/k8sdemoci.bat" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,28 +21,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/cd/jenkins-cd1">
+        <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-declarative">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/jenkins-docker.sh">
+        <entry file="file://$PROJECT_DIR$/script/cd/jenkins-k8sdemo">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="114" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="114" />
+            <state relative-caret-position="195">
+              <caret line="17" column="52" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-modified-jenkins">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -51,55 +57,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-modified-jenkins">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="35" column="79" lean-forward="true" selection-start-line="21" selection-end-line="35" selection-end-column="79" />
+            <state relative-caret-position="221">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-test">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-deployment.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="357">
+              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-codedemo">
+        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/cd/jenkin-kub">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/cd/jenkins-salve-test">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+            <state relative-caret-position="289">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -130,6 +109,7 @@
       <find>database</find>
       <find>k8sdemo-jenkins</find>
       <find>k8sdemo-database</find>
+      <find>codedemo</find>
     </findStrings>
     <replaceStrings>
       <replace>github.com/jfeng45/k8sdemo</replace>
@@ -158,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/script/kubernetes/database/mysql-deployment.yaml" />
         <option value="$PROJECT_DIR$/script/kubernetes/database/mysql-secret.yaml" />
         <option value="$PROJECT_DIR$/script/kubernetes/database/mysql-config.yaml" />
         <option value="$PROJECT_DIR$/script/kubernetes/mysql-config.yaml" />
@@ -206,17 +185,17 @@
         <option value="$PROJECT_DIR$/script/kubernetes/jenkins/service-account.yaml" />
         <option value="$PROJECT_DIR$/script/kubernetes/jenkins/docker/jenkins-docker.sh" />
         <option value="$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-modified-jenkins" />
-        <option value="$PROJECT_DIR$/script/cd/jenkins-cd" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-test" />
         <option value="$PROJECT_DIR$/script/cd/jenkins-cd1" />
+        <option value="$PROJECT_DIR$/script/cd/jenkins-cd" />
+        <option value="$PROJECT_DIR$/script/cd/jenkins-k8sdemo" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="8" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="52" />
     <option name="width" value="1304" />
-    <option name="height" value="726" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -231,16 +210,6 @@
             <path>
               <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="k8sdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="k8sdemo" type="b2602c69:ProjectViewProjectNode" />
@@ -342,7 +311,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="8" width="1304" height="726" extended-state="0" />
+    <frame x="52" y="0" width="1304" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28215435" />
@@ -548,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/k8sdemoci.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -621,31 +583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-cd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-service.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-deployment.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -656,52 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-dec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/jenkin-kub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-salve-test">
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-slave-test">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-codedemo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="35" column="79" lean-forward="true" selection-start-line="21" selection-end-line="35" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/docker-backend.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -712,17 +611,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-modified-jenkins">
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/docker-backend.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state>
+          <caret selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-cd1">
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend-full">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -730,6 +629,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-jenkins-docker">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/docker/Dockerfile-modified-jenkins">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-k8sdemo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/k8sdemoci.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkin-kub-deployment">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-docker-plugin">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-declarative-test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkinsfile-declarative">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-deployment.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="32" />
         </state>
       </provider>
     </entry>

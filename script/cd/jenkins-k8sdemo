@@ -1,0 +1,40 @@
+def POD_LABEL = "k8sdemopod-${UUID.randomUUID().toString()}"
+podTemplate(label: POD_LABEL, cloud: 'kubernetes', containers: [
+    containerTemplate(name: 'modified-jenkins', image: 'jfeng45/modified-jenkins:1.0', ttyEnabled: true, command: 'cat')
+  ],
+  volumes: [
+     hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock')
+  ]) {
+
+    node(POD_LABEL) {
+       def kubBackendDirectory = "/script/kubernetes/backend"
+       stage('Checkout') {
+            container('modified-jenkins') {
+                sh 'echo get source from github'
+                git 'https://github.com/jfeng45/k8sdemo'
+            }
+          }
+       stage('Build image') {
+            def imageName = "jfeng45/jenkins-k8sdemo:${env.BUILD_NUMBER}"
+            def dockerDirectory = "${kubBackendDirectory}/docker/Dockerfile-k8sdemo-backend"
+             container('modified-jenkins') {
+               withCredentials([[$class: 'UsernamePasswordMultiBinding',
+                 credentialsId: 'dockerhub',
+                 usernameVariable: 'DOCKER_HUB_USER',
+                 passwordVariable: 'DOCKER_HUB_PASSWORD']]) {
+                 sh """
+                   docker login -u ${DOCKER_HUB_USER} -p ${DOCKER_HUB_PASSWORD}
+                   docker build -f ${WORKSPACE}${dockerDirectory} -t ${imageName} .
+                   docker push ${imageName}
+                   """
+               }
+             }
+           }
+       stage('Deploy') {
+           container('modified-jenkins') {
+               sh "kubectl apply -f ${WORKSPACE}${kubBackendDirectory}/backend-deployment.yaml"
+               sh "kubectl apply -f ${WORKSPACE}${kubBackendDirectory}/backend-service.yaml"
+             }
+       }
+    }
+}
