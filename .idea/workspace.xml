@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc7183a3-d645-41c3-b2fe-e6ede342afc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/script/cd/jenkins-k8sdemo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/cd/jenkin-kub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/cd/jenkins-cd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/cd/jenkins-cd1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/cd/jenkins-salve-test" beforeDir="false" afterPath="$PROJECT_DIR$/script/cd/jenkins-slave-test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/cd/jenkinsfile-codedemo" beforeDir="false" afterPath="$PROJECT_DIR$/script/cd/jenkinsfile-declarative" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/cd/jenkinsfile-dec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/cd/k8sdemoci.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.zh.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,11 +57,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-deployment.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.zh.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="141">
+                <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -163,7 +167,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/script/kubernetes/backend/backend-deployment.yaml" />
         <option value="$PROJECT_DIR$/config/logrus.go" />
-        <option value="$PROJECT_DIR$/README.zh.md" />
         <option value="$PROJECT_DIR$/script/kubernetes/database/database-service.yaml" />
         <option value="$PROJECT_DIR$/script/ci/k8sdemoci.bat" />
         <option value="$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-volume.yaml" />
@@ -189,13 +192,15 @@
         <option value="$PROJECT_DIR$/script/cd/jenkins-cd1" />
         <option value="$PROJECT_DIR$/script/cd/jenkins-cd" />
         <option value="$PROJECT_DIR$/script/cd/jenkins-k8sdemo" />
+        <option value="$PROJECT_DIR$/README.zh.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="52" />
+    <option name="x" value="38" />
+    <option name="y" value="14" />
     <option name="width" value="1304" />
-    <option name="height" value="735" />
+    <option name="height" value="711" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -311,10 +316,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="0" width="1304" height="735" extended-state="1" />
+    <frame x="38" y="14" width="1304" height="711" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28215435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15916398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -434,16 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.zh.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -646,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-k8sdemo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/cd/k8sdemoci.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -695,10 +683,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/script/cd/jenkins-k8sdemo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/script/kubernetes/jenkins/jenkins-deployment.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.zh.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="141">
+            <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
