@@ -8,6 +8,7 @@
 
 请阅读下列文章以获取详细内容：
 
++ [从代码的视角深入浅出理解DevOps](https://blog.csdn.net/weixin_38748858/article/details/103068797)
 + [把应用程序迁移到k8s需要修改什么？](https://blog.csdn.net/weixin_38748858/article/details/102758381)
 + [在容器上构建持续部署及最佳实践初探](https://blog.csdn.net/weixin_38748858/article/details/102967540)
 + [在k8s上安装Jenkins及常见问题](https://blog.csdn.net/weixin_38748858/article/details/102898043)
