@@ -2,6 +2,7 @@
 kubectl apply -f k8sdemo-config.yaml
 kubectl apply -f k8sdemo-secret.yaml
 
+# cd /home/vagrant/jfeng45/k8sdemo/script/kubernetes
 # kubectl get service
 # kubectl get deployment
 # kubectl describe configMap
