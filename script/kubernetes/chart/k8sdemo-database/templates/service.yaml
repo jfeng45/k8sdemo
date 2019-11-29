@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  {{ .Values.global.k8sdemoDatabaseService}}
+  labels:
+    {{- include "k8sdemo-database.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+      protocol: TCP
+      nodePort: {{.Values.service.nodePort}}
+  selector:
+    {{- include "k8sdemo-database.selectorLabels" . | nindent 4 }}

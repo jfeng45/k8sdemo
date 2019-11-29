@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Values.persistentvolume.name }}
+  labels:
+    {{- include "k8sdemo-backend.labels" . | nindent 4 }}
+spec:
+  capacity:
+    storage: {{ .Values.persistentvolume.storage }}
+  # volumeMode field requires BlockVolume Alpha feature gate to be enabled.
+  volumeMode: Filesystem
+  accessModes: {{ .Values.persistentvolume.accessModes }}
+  storageClassName: standard
+  local:
+    path: /home/vagrant/app/k8sdemo/logs #/home/vagrant/database/k8sdemo/database
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - minikube

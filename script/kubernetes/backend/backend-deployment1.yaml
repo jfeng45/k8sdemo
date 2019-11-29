@@ -1,0 +1,56 @@
+# Source: k8sdemo-backend/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8sdemo-backend-deployment
+  labels:
+    helm.sh/chart: k8sdemo-backend-0.1.0
+    app.kubernetes.io/name: k8sdemo-backend
+    app.kubernetes.io/instance: k8sdemo-backend
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: k8sdemo-backend
+      app.kubernetes.io/instance: k8sdemo-backend
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: k8sdemo-backend
+        app.kubernetes.io/instance: k8sdemo-backend
+    spec:
+      serviceAccountName: default
+      containers:
+        - name: k8sdemo-backend-container
+          image: k8sdemo-backend:1.0
+          imagePullPolicy: Never
+          env:
+            - name: MYSQL_USER_NAME
+              value: dbuser
+            - name: MYSQL_USER_PASSWORD
+              value: dbuser
+            - name: MYSQL_HOST
+              value: k8sdemo-database-service
+            - name: MYSQL_DATABASE
+              value: service_config
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          volumeMounts:
+            - name: k8sdemo-backend-persistentstorage
+              mountPath: /app/logs
+          livenessProbe:
+              httpGet:
+                path: /
+                port: http
+          readinessProbe:
+              httpGet:
+                path: /
+                port: http
+      volumes:
+        - name: k8sdemo-backend-persistentstorage
+          persistentVolumeClaim:
+            claimName: k8sdemo-backend-pvclaim

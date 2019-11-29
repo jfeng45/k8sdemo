@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "k8sdemo-database.fullname" . }}
+  labels:
+    {{- include "k8sdemo-database.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "k8sdemo-database.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "k8sdemo-database.selectorLabels" . | nindent 8 }}
+    spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ include "k8sdemo-database.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: {{ .Values.image.repository }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: {{ .Values.global.mysqlRootPassword }}
+            - name: MYSQL_USER_NAME
+              value: {{ .Values.global.mysqlUserName }}
+            - name: MYSQL_USER_PASSWORD
+              value: {{ .Values.global.mysqlUserPassword }}
+            - name: MYSQL_DATABASE
+              value: {{ .Values.global.mysqlDatabase }}
+          args: ["--default-authentication-plugin=mysql_native_password"]
+          ports:
+            - containerPort: 3306
+              name: portname
+          volumeMounts:
+            - name: {{ .Values.deployment.volumeName }} #k8sdemo-database-persistentstorage
+              mountPath: /var/lib/mysql
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      volumes:
+      - name: {{ .Values.deployment.volumeName }} # k8sdemo-database-persistentstorage
+        persistentVolumeClaim:
+          claimName: {{ .Values.persistentvolumeclaim.name }}

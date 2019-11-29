@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .Values.persistentvolumeclaim.name }}
+  labels:
+    {{- include "k8sdemo-backend.labels" . | nindent 4 }}
+spec:
+  accessModes: {{ .Values.persistentvolumeclaim.accessModes}}
+  #  - ReadWriteOnce
+  # storageClassName: local-storage
+  resources:
+    requests:
+      storage: {{ .Values.persistentvolumeclaim.storage }} #1 GB

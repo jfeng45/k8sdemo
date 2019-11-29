@@ -1,5 +1,5 @@
 apiVersion: v2
-name: k8sdemo
+name: k8sdemo-database
 description: A Helm chart for Kubernetes
 
 # A chart can be either an 'application' or a 'library' chart.
@@ -19,10 +19,3 @@ version: 0.1.0
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
 appVersion: 1.16.0
-dependencies:
-  - name: k8sdemo-backend
-    repository: file://../k8sdemo-backend
-    version: 0.1.0
-  - name: k8sdemo-database
-    repository: file://../k8sdemo-database
-    version: 0.1.0

@@ -16,7 +16,7 @@ spec:
         app: k8sdemo-backend
     spec:
       containers:
-        - image: k8sdemo-backend:latest
+        - image: k8sdemo-backend:1.0
           name: k8sdemo-backend-container
           imagePullPolicy: Never
           env:

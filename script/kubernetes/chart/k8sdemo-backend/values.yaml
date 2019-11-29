@@ -1,26 +1,28 @@
-# Default values for k8sdemo.
+# Default values for k8sdemo-backend.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: nginx:1.17.6
+  repository: k8sdemo-backend:2.0
   pullPolicy: Never
 
 imagePullSecrets: []
-nameOverride: "k8sdemo"
-fullnameOverride: "k8sdemo"
+nameOverride: k8sdemo-backend
+fullnameOverride: k8sdemo-backend
 
 global:
   k8sdemoBackendService: k8sdemo-backend-service
   k8sdemoDatabaseService: &k8sdemoDatabaseService k8sdemo-database-service
   mysqlUserName: dbuser
   mysqlUserPassword: dbuser
-  mysqlRootPassword: root
   mysqlPort: 3306
   mysqlHost: *k8sdemoDatabaseService
   mysqlDatabase: service_config
+
+deployment:
+  volumeName: k8sdemo-backend-persistentstorage
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -40,10 +42,23 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+persistentvolume:
+  name: k8sdemo-backend-pv
+  storage: &storage 1Gi
+  accessModes: &accessModes
+    - ReadWriteOnce
+
+persistentvolumeclaim:
+  name: k8sdemo-backend-pvclaim
+  storage: *storage
+  accessModes: *accessModes
+
 service:
+  #type: ClusterIP
+  #port: 80
   type: NodePort
   port: 80
-  nodePort: 31080
+  nodePort: 32080
 
 ingress:
   enabled: false

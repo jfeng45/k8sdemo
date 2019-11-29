@@ -1,0 +1,9 @@
+dependencies:
+- name: k8sdemo-backend
+  repository: file://../k8sdemo-backend
+  version: 0.1.0
+- name: k8sdemo-database
+  repository: file://../k8sdemo-database
+  version: 0.1.0
+digest: sha256:56623cf56ce2c7847ffbba4b91d1d9e2094c3d63ef1aef5179318b0400761335
+generated: "2019-11-25T05:56:07.224798283Z"

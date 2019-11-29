@@ -1,25 +1,22 @@
-# Default values for k8sdemo.
+# Default values for k8sdemo-database.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: nginx:1.17.6
+  repository: mysql:5.7
   pullPolicy: Never
 
 imagePullSecrets: []
-nameOverride: "k8sdemo"
-fullnameOverride: "k8sdemo"
+nameOverride: k8sdemo-database
+fullnameOverride: k8sdemo-database
 
 global:
-  k8sdemoBackendService: k8sdemo-backend-service
-  k8sdemoDatabaseService: &k8sdemoDatabaseService k8sdemo-database-service
+  k8sdemoDatabaseService: k8sdemo-database-service
   mysqlUserName: dbuser
   mysqlUserPassword: dbuser
   mysqlRootPassword: root
-  mysqlPort: 3306
-  mysqlHost: *k8sdemoDatabaseService
   mysqlDatabase: service_config
 
 serviceAccount:
@@ -28,6 +25,9 @@ serviceAccount:
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
   name:
+
+deployment:
+  volumeName: k8sdemo-database-persistentstorage
 
 podSecurityContext: {}
   # fsGroup: 2000
@@ -41,9 +41,23 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
+  name: k8sdemo-database-service
   type: NodePort
-  port: 80
-  nodePort: 31080
+  port: 3306
+  nodePort: 30306
+  protocol : TCP
+  targetPort: 3306
+
+persistentvolume:
+  name: k8sdemo-database-pv
+  storage: &storage 1Gi
+  accessModes: &accessModes
+    - ReadWriteOnce
+
+persistentvolumeclaim:
+  name: k8sdemo-database-pvclaim
+  storage: *storage
+  accessModes: *accessModes
 
 ingress:
   enabled: false
