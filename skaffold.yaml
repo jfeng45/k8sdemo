@@ -1,0 +1,16 @@
+apiVersion: skaffold/v1
+kind: Config
+metadata:
+  name: k-sdemo
+build:
+  artifacts:
+  - image: k8sdemo-backend
+    context: .
+    docker:
+      dockerfile: script/kubernetes/backend/docker/Dockerfile-k8sdemo-backend
+deploy:
+  kubectl:
+    manifests:
+    - script/kubernetes/backend/backend-deployment.yaml
+    - script/kubernetes/backend/backend-service.yaml
+

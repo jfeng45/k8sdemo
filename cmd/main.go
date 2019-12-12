@@ -1,9 +1,8 @@
 package main
 
 import (
-	"github.com/jfeng45/k8sdemo/tool"
 	"github.com/jfeng45/k8sdemo/config"
-	"os"
+	"github.com/jfeng45/k8sdemo/tool"
 )
 
 func main(){
@@ -31,7 +30,7 @@ func testRegistration() {
 
 		tool.Log.Debug("user registere failed:", err)
 	} else {
-		tool.Log.Debug("user lst:", users)
+		tool.Log.Debug("user lst skaffold:", users)
 	}
 
 }
@@ -76,9 +75,9 @@ func testRegistration() {
 //	return nil
 //}
 //
-func checkErr(err error) {
-	if err != nil {
-		tool.Log.Debug("Error is ", err)
-		os.Exit(-1)
-	}
-}
+//func checkErr(err error) {
+//	if err != nil {
+//		tool.Log.Debug("Error is ", err)
+//		os.Exit(-1)
+//	}
+//}

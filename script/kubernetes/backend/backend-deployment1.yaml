@@ -24,7 +24,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: k8sdemo-backend-container
-          image: k8sdemo-backend:1.0
+          image: k8sdemo-backend:05894ca-dirty
           imagePullPolicy: Never
           env:
             - name: MYSQL_USER_NAME

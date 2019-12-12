@@ -1,0 +1,6 @@
+kind: Project
+name: k8sdemo-project
+environments:
+  - name: local
+    providers:
+      - name: local-kubernetes
